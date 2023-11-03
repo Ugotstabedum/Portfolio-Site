@@ -1,3 +1,34 @@
+:root {
+    --primary-background: #BFACC8;
+    --primary-accent: #4F1271;
+    --hover-primary-accent: #a9a6be;
+    --primary-font: black;
+    --alternate-background: whitesmoke;
+    --header-footer-background: #4A4063;
+    --header-footer-font: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    color: var(--primary-font);
+    background-color: var(--primary-background);
+}
+
+header, footer {
+    color: whitesmoke;
+    background-color: var(--header-footer-background);
+    
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: var(--hover-primary-accent);
 }

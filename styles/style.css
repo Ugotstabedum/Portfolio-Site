@@ -113,10 +113,32 @@ body {
 .skill-card {
     border: 5px double var(--primary-font);
     padding: 1rem; 
-    width: 250px
+    width: 250px;
+    margin: 1rem 0;
 }
 
 .skill-list {
     list-style-type: none;
 
+}
+
+.project-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.project-item {
+    margin: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--primary-font);
+}
+
+.project-link:hover {
+    color: var(--primary-accent);
+    opacity: 0.8;
 }

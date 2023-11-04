@@ -1,3 +1,5 @@
+
+/* ******************* CSS Variables ************************** */
 :root {
     --primary-background: #BFACC8;
     --primary-accent: #4F1271;
@@ -8,27 +10,93 @@
     --header-footer-font: whitesmoke;
 }
 
+/* ************************ Reset ************************* */
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+/* ******************** Page level styles ********************* */
 body {
     font-family: 'Raleway', sans-serif;
     color: var(--primary-font);
     background-color: var(--primary-background);
 }
 
-header, footer {
+/* ******************** HEADER and FOOTER ********************* */
+.page-header, .page-footer {
     color: whitesmoke;
-    background-color: var(--header-footer-background);
-    
+    background-color: var(--header-footer-background);  
+    letter-spacing: 1px;
 }
 
-a {
-    color: whitesmoke;
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
 }
 
-a:hover {
-    color: var(--hover-primary-accent);
+.page-footer {
+    padding: 2rem 1.5rem
+}
+
+.footer-links-container {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.footer-link-item {
+    margin: 0.5rem
+}
+ 
+.page-menu-container {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.page-menu-item {
+    margin: 0.5rem;
+}
+
+.page-menu-link {
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+.page-menu-link:hover {
+    color:var(--hover-primary-accent);
+}
+
+/* ******************** main ********************* */
+.bg-dark {
+    background-color: whitesmoke;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+.profile-heading {
+    margin: 1rem;
+}
+
+.profile-tagline {
+    margin: .5rem
 }

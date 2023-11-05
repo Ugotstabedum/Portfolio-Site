@@ -20,11 +20,31 @@ html {
     padding: 0;
 }
 
+p {
+    margin: 0.5rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--primary-font);
+    background-color: var(--primary-background);
+    font-size: 1.25rem;
+}
+
 /* ******************** Page level styles ********************* */
 body {
     font-family: 'Raleway', sans-serif;
     color: var(--primary-font);
     background-color: var(--primary-background);
+}
+
+label {
+    margin-bottom: 0.25;
 }
 
 /* ******************** HEADER and FOOTER ********************* */
@@ -141,4 +161,34 @@ body {
 .project-link:hover {
     color: var(--primary-accent);
     opacity: 0.8;
+}
+
+.form-row {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row.no-stretch {
+    align-items: flex-start;
+}
+
+.send-button {
+    background: none;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.send-button:hover,
+.semd-button:focus {
+    transform: translate(-0.25rem);
+    color: whitesmoke;
+    background-color: var(--header-footer-background);
+    border-color: var(--primary-background);
+
 }
